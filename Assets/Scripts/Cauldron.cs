@@ -7,13 +7,20 @@ public class Cauldron : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //Debug.Log(other.gameObject.GetComponent<Ingredient>().id + " is the ID of the falling ingredient");
-        //Debug.Log(gameController.getRequiredIngID() + " is the id of the required ingredient");
+        Debug.Log(other.gameObject.GetComponent<Ingredient>().id + " is the ID of the falling ingredient");
+        Debug.Log(gameController.getRequiredIngID() + " is the id of the required ingredient");
         if (other.gameObject.GetComponent<Ingredient>().id == gameController.getRequiredIngID())
         {
-            Destroy(other.gameObject);
-            // Check if required item before running following line
+            //Successful catch results in caught items increment and reselection of required item. 
             gameController.IncreaseIngCaught();
+            gameController.DesignateRequiredItem();
         }
+        else
+        {
+            //If the item is not required, enter failure state.
+            Debug.Log("Wrong item: Failure");
+        }
+        //Always destroy item regardles
+        Destroy(other.gameObject);
     }
 }
