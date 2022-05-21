@@ -155,6 +155,8 @@ MonoBehaviour:
   item:
   - {fileID: 2506620457006013609, guid: 4c455a0404aa025478750599c39371bb, type: 3}
   xBoundary: 9.5
+  waitCounterLimit: 300
+  probabilityRangeLimit: 1
 --- !u!4 &188317424
 Transform:
   m_ObjectHideFlags: 0

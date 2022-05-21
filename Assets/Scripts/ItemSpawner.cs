@@ -4,11 +4,11 @@ public class ItemSpawner : MonoBehaviour
 {
     public GameObject[] item;
     public float xBoundary = 10.0f;
-    
-    private int maxNumOfItemTypes;
-    public int waitCounter = 0;
     public int waitCounterLimit = 15;
     public int probabilityRangeLimit = 50;
+    
+    private int maxNumOfItemTypes;
+    private int waitCounter = 0;
 
     private void Start()
     {
@@ -18,11 +18,14 @@ public class ItemSpawner : MonoBehaviour
     private void Update()
     {
         float randomNumber = Random.Range(0, probabilityRangeLimit);
-        if (randomNumber==1||waitCounter>waitCounterLimit)
+
+        if (randomNumber == 1 || waitCounter > waitCounterLimit)
         {
             SpawnItem();
             waitCounter = 0;
-        } else {
+        }
+        else
+        {
             waitCounter += 1;
         }
     }
