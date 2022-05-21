@@ -152,10 +152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 976be79151a2d414da1b27965dd67fd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item:
+  itemPool:
   - {fileID: 5211668093830293054, guid: 732a96c69513c404186125c91448ffba, type: 3}
-  - {fileID: 4126233722509696101, guid: 5d638719dcb09ec4fa4adbf610a6ea91, type: 3}
   - {fileID: 7208889824248559217, guid: 4b517f68b2126a946a1e3a22cf20d304, type: 3}
+  - {fileID: 4126233722509696101, guid: 5d638719dcb09ec4fa4adbf610a6ea91, type: 3}
   - {fileID: 3928193712163169355, guid: a4a056816dcd66646b031c469376eadb, type: 3}
   - {fileID: 6426842719335067183, guid: 2e36e36bf3c72414ba04fa3980a49d8d, type: 3}
   - {fileID: 8928443328297196949, guid: f49773c5962c7594595fbaf337073254, type: 3}
@@ -441,6 +441,7 @@ GameObject:
   m_Component:
   - component: {fileID: 856342105}
   - component: {fileID: 856342104}
+  - component: {fileID: 856342106}
   m_Layer: 0
   m_Name: Required Ingredient
   m_TagString: Untagged
@@ -515,6 +516,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &856342106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856342103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94917a1a2cc8d5e49bf86a1523bac59e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemSpawner: {fileID: 188317423}
 --- !u!1 &1767467202
 GameObject:
   m_ObjectHideFlags: 0

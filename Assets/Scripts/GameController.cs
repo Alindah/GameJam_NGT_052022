@@ -10,6 +10,13 @@ public class GameController : MonoBehaviour
 
     private int ingCaught = 0;
     private float speedMultiplier = 1.0f;
+    private int requiredIng;
+
+    private void Start()
+    {
+        DesignateRequiredItem();
+        Debug.Log(requiredIng + " is the required item");
+    }
 
     private void Update()
     {
@@ -41,5 +48,11 @@ public class GameController : MonoBehaviour
     public float GetSpeedMultiplier()
     {
         return speedMultiplier;
+    }
+
+    private void DesignateRequiredItem() {
+        requiredIng = Random.Range(0, itemSpawner.maxNumOfItemTypes);
+        //itemSpawner.itemPool[randomIndex]
+        //Instantiate(itemPool[randomIndex], new Vector2(8, itemPool[randomIndex].transform.position.y), Quaternion.identity, transform);
     }
 }

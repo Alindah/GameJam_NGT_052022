@@ -9,7 +9,7 @@ public class RequiredIngredientSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        SpawnRequiredItem();
     }
 
     // Update is called once per frame
@@ -19,7 +19,8 @@ public class RequiredIngredientSpawner : MonoBehaviour
     }
 
     private void SpawnRequiredItem() {
-        //int randomIndex = Random.Range(0, maxNumOfItemTypes);
-        //Instantiate(item[randomIndex], new Vector2(8, item[randomIndex].transform.position.y), Quaternion.identity, transform);
+        int randomIndex = Random.Range(0, itemSpawner.maxNumOfItemTypes);
+        //itemSpawner.itemPool[randomIndex]
+        //Instantiate(itemPool[randomIndex], new Vector2(8, itemPool[randomIndex].transform.position.y), Quaternion.identity, transform);
     }
 }
