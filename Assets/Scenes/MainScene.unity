@@ -189,7 +189,7 @@ GameObject:
   m_Component:
   - component: {fileID: 364577671}
   - component: {fileID: 364577670}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Witch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +236,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: d200de7569a0d2047b6450dda20c5fa1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -357,7 +357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 754290883}
   - component: {fileID: 754290882}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -528,7 +528,7 @@ GameObject:
   - component: {fileID: 1767467206}
   - component: {fileID: 1767467205}
   - component: {fileID: 1767467207}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cauldron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -591,7 +591,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 6020816187ded634092bf14ea7e2bdb9, type: 3}
   m_Color: {r: 0.15340404, g: 0.14317076, b: 0.1792453, a: 1}
   m_FlipX: 0
@@ -665,7 +665,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1980879163}
   - component: {fileID: 1980879162}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -712,7 +712,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: a6f7929d937b5194b825235dd4c3b6d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -792,7 +792,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2088544495}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
