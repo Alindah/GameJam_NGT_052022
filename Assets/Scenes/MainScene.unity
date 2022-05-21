@@ -153,7 +153,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item:
-  - {fileID: 2506620457006013609, guid: 4c455a0404aa025478750599c39371bb, type: 3}
+  - {fileID: 5211668093830293054, guid: 732a96c69513c404186125c91448ffba, type: 3}
+  - {fileID: 4126233722509696101, guid: 5d638719dcb09ec4fa4adbf610a6ea91, type: 3}
+  - {fileID: 7208889824248559217, guid: 4b517f68b2126a946a1e3a22cf20d304, type: 3}
+  - {fileID: 3928193712163169355, guid: a4a056816dcd66646b031c469376eadb, type: 3}
+  - {fileID: 6426842719335067183, guid: 2e36e36bf3c72414ba04fa3980a49d8d, type: 3}
+  - {fileID: 8928443328297196949, guid: f49773c5962c7594595fbaf337073254, type: 3}
   xBoundary: 9.5
   delayTime: 1
   spawnIntervalMin: 0
