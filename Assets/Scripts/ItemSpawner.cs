@@ -3,6 +3,7 @@ using UnityEngine;
 public class ItemSpawner : MonoBehaviour
 {
     public GameObject[] item;
+    public float xBoundary = 10.0f;
     
     private int maxNumOfItemTypes;
 
@@ -23,7 +24,8 @@ public class ItemSpawner : MonoBehaviour
     private void SpawnItem()
     {
         int randomIndex = Random.Range(0, maxNumOfItemTypes);
-        Instantiate(item[randomIndex]);
+        float xRange = Random.Range(-xBoundary, xBoundary);
+        Instantiate(item[randomIndex], new Vector2(xRange, item[randomIndex].transform.position.y), Quaternion.identity);
         Debug.Log("spawned item " + randomIndex);
     }
 }
