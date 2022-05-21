@@ -180,6 +180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 364577671}
   - component: {fileID: 364577670}
+  - component: {fileID: 364577672}
   m_Layer: 0
   m_Name: Witch
   m_TagString: Untagged
@@ -255,6 +256,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &364577672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364577669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfc4dd89960a98b4ba916b6182a7cd74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 10
+  maxDistanceFromCenter: 10
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
