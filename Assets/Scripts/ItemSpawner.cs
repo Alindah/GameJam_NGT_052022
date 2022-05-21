@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ItemSpawner : MonoBehaviour
 {
-    public GameObject[] item;
+    public GameObject[] itemPool;
     public float xBoundary = 10.0f;
     public float delayTime;
     public float spawnIntervalMin;
@@ -15,8 +15,8 @@ public class ItemSpawner : MonoBehaviour
     private void Start()
     {
         // Makes sure game doesn't break if maxNumOfItemTypes exceeds the number of item types we have
-        if (maxNumOfItemTypes > item.Length)
-            maxNumOfItemTypes = item.Length;
+        if (maxNumOfItemTypes > itemPool.Length)
+            maxNumOfItemTypes = itemPool.Length;
 
         Invoke(SPAWN_FUNC, delayTime);
     }
@@ -35,12 +35,12 @@ public class ItemSpawner : MonoBehaviour
     {
         int randomIndex = Random.Range(0, maxNumOfItemTypes);
         float xRange = Random.Range(-xBoundary, xBoundary);
-        Instantiate(item[randomIndex], new Vector2(xRange, item[randomIndex].transform.position.y), Quaternion.identity, transform);
+        Instantiate(itemPool[randomIndex], new Vector2(xRange, itemPool[randomIndex].transform.position.y), Quaternion.identity, transform);
     }
 
     public void IncreasePool()
     {
-        if (maxNumOfItemTypes < item.Length)
+        if (maxNumOfItemTypes < itemPool.Length)
             maxNumOfItemTypes++;
     }
 }
