@@ -7,7 +7,9 @@ public class Cauldron : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == ITEM_TAG)
+        //Debug.Log(other.gameObject.GetComponent<Ingredient>().id + " is the ID of the falling ingredient");
+        //Debug.Log(gameController.getRequiredIngID() + " is the id of the required ingredient");
+        if (other.gameObject.GetComponent<Ingredient>().id == gameController.getRequiredIngID())
         {
             Destroy(other.gameObject);
             // Check if required item before running following line

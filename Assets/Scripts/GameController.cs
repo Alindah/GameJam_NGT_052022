@@ -52,9 +52,14 @@ public class GameController : MonoBehaviour
         return speedMultiplier;
     }
 
-    private void DesignateRequiredItem() {
+    public void DesignateRequiredItem() {
         requiredIng = Random.Range(0, itemSpawner.maxNumOfItemTypes);
         //itemSpawner.itemPool[randomIndex]
         //Instantiate(itemPool[randomIndex], new Vector2(8, itemPool[randomIndex].transform.position.y), Quaternion.identity, transform);
+    }
+
+    public int getRequiredIngID()
+    {
+        return requiredIng;
     }
 }
