@@ -12,14 +12,11 @@ public class PlayerController : MonoBehaviour
     {
         //Get player input
         horizontalInput = Input.GetAxis("Horizontal");
-        if (horizontalInput<0 && facingRight)
+
+        if ((horizontalInput < 0 && facingRight) || (horizontalInput > 0 && !facingRight))
         {
             flip();
-            facingRight = false;
-        }
-        if (horizontalInput > 0 && !facingRight) {
-            flip();
-            facingRight = true;
+            facingRight = !facingRight;
         }
 
         if (Input.GetButton("Horizontal")) {
