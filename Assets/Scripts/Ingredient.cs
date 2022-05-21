@@ -1,7 +1,8 @@
 using UnityEngine;
 
-public class DropItem : MonoBehaviour
+public class Ingredient : MonoBehaviour
 {
+    public int id;
     public float speed = 5.0f;
 
     private GameController gameController;

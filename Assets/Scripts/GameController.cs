@@ -3,6 +3,8 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     public ItemSpawner itemSpawner;
+
+    [Header("Leveling")]
     public int level = 1;
     public int ingRequiredToLevelUp = 5;
     public float speedIntervalInc = 0.05f;
