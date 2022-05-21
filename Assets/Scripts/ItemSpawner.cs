@@ -6,6 +6,7 @@ public class ItemSpawner : MonoBehaviour
     public float xBoundary = 10.0f;
     
     private int maxNumOfItemTypes;
+    private int waitCounter = 0;
 
     private void Start()
     {
@@ -14,9 +15,13 @@ public class ItemSpawner : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Jump"))
+        float randomNumber = Random.Range(0, 50);
+        if (randomNumber==1||waitCounter>15)
         {
             SpawnItem();
+            waitCounter = 0;
+        } else {
+            waitCounter += 1;
         }
     }
 
