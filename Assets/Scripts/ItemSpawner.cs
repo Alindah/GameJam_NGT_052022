@@ -4,29 +4,26 @@ public class ItemSpawner : MonoBehaviour
 {
     public GameObject[] item;
     public float xBoundary = 10.0f;
-    public int waitCounterLimit = 15;
-    public int probabilityRangeLimit = 50;
+    public float delayTime;
+    public float spawnIntervalMin;
+    public float spawnIntervalMax;
     
     private int maxNumOfItemTypes;
-    private int waitCounter = 0;
+    private const string SPAWN_FUNC = "SpawnItem";
+    private float spawnInterval;
 
     private void Start()
     {
         maxNumOfItemTypes = item.Length;
+        // Spawn first bird
+        Invoke(SPAWN_FUNC, delayTime);
     }
 
     private void Update()
     {
-        float randomNumber = Random.Range(0, probabilityRangeLimit);
-
-        if (randomNumber == 1 || waitCounter > waitCounterLimit)
-        {
-            SpawnItem();
-            waitCounter = 0;
-        }
-        else
-        {
-            waitCounter += 1;
+        if (!IsInvoking(SPAWN_FUNC)) {
+            spawnInterval = Random.Range(spawnIntervalMin, spawnIntervalMax);
+            Invoke(SPAWN_FUNC, spawnInterval);
         }
     }
 
