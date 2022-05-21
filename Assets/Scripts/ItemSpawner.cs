@@ -15,13 +15,13 @@ public class ItemSpawner : MonoBehaviour
     private void Start()
     {
         maxNumOfItemTypes = item.Length;
-        // Spawn first bird
         Invoke(SPAWN_FUNC, delayTime);
     }
 
     private void Update()
     {
-        if (!IsInvoking(SPAWN_FUNC)) {
+        if (!IsInvoking(SPAWN_FUNC))
+        {
             spawnInterval = Random.Range(spawnIntervalMin, spawnIntervalMax);
             Invoke(SPAWN_FUNC, spawnInterval);
         }
