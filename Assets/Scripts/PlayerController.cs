@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Witch : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public float movementSpeed = 20f;
     public float maxDistanceFromCenter = 10.0f;
