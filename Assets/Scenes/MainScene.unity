@@ -163,6 +163,7 @@ MonoBehaviour:
   delayTime: 1
   spawnIntervalMin: 0
   spawnIntervalMax: 1
+  maxNumOfItemTypes: 3
 --- !u!4 &188317424
 Transform:
   m_ObjectHideFlags: 0
