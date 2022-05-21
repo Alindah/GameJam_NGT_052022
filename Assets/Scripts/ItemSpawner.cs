@@ -37,4 +37,10 @@ public class ItemSpawner : MonoBehaviour
         float xRange = Random.Range(-xBoundary, xBoundary);
         Instantiate(item[randomIndex], new Vector2(xRange, item[randomIndex].transform.position.y), Quaternion.identity, transform);
     }
+
+    public void IncreasePool()
+    {
+        if (maxNumOfItemTypes < item.Length)
+            maxNumOfItemTypes++;
+    }
 }
