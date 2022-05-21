@@ -7,9 +7,9 @@ public class Cauldron : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other.gameObject.GetComponent<Ingredient>().id + " is the ID of the falling ingredient");
+        Debug.Log(other.gameObject.GetComponent<Ingredient>().GetId() + " is the ID of the falling ingredient");
         Debug.Log(gameController.getRequiredIngID() + " is the id of the required ingredient");
-        if (other.gameObject.GetComponent<Ingredient>().id == gameController.getRequiredIngID())
+        if (other.gameObject.GetComponent<Ingredient>().GetId() == gameController.getRequiredIngID())
         {
             //Successful catch results in caught items increment and reselection of required item. 
             gameController.IncreaseIngCaught();

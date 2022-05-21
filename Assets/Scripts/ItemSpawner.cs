@@ -18,6 +18,10 @@ public class ItemSpawner : MonoBehaviour
         if (maxNumOfItemTypes > itemPool.Length)
             maxNumOfItemTypes = itemPool.Length;
 
+        // Assign ids to ingredient prefabs
+        for (int i = 0; i < itemPool.Length; i++)
+            itemPool[i].gameObject.GetComponent<Ingredient>().SetId(i);
+
         Invoke(SPAWN_FUNC, delayTime);
     }
 

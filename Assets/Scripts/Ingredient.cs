@@ -17,4 +17,13 @@ public class Ingredient : MonoBehaviour
     {
         transform.Translate(Vector2.down * Time.deltaTime * speed * gameController.GetSpeedMultiplier());
     }
+    public void SetId(int id)
+    {
+        this.id = id;
+    }
+
+    public int GetId()
+    {
+        return id;
+    }
 }
