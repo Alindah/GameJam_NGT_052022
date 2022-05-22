@@ -65,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2506620457006013610, guid: 4c455a0404aa025478750599c39371bb, type: 3}
       propertyPath: speed
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2506620457006013611, guid: 4c455a0404aa025478750599c39371bb, type: 3}
       propertyPath: m_RootOrder
@@ -122,6 +122,14 @@ PrefabInstance:
     - target: {fileID: 2506620457006013611, guid: 4c455a0404aa025478750599c39371bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3993448593953163459, guid: 4c455a0404aa025478750599c39371bb, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3993448593953163459, guid: 4c455a0404aa025478750599c39371bb, type: 3}
+      propertyPath: m_GravityScale
+      value: 0.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c455a0404aa025478750599c39371bb, type: 3}

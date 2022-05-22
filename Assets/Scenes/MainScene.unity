@@ -1704,6 +1704,7 @@ MonoBehaviour:
   itemSpawner: {fileID: 188317423}
   failScreen: {fileID: 1419162139}
   reqIngDisplay: {fileID: 1241714753}
+  godMode: 1
   level: 1
   ingRequiredToLevelUp: 3
   speedIntervalInc: 0.1
