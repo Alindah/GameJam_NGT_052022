@@ -18,6 +18,8 @@ public class Cauldron : MonoBehaviour
         {
             // If player catches the wrong item x amount of times, display lose screen
             // Otherwise lose a life
+            gameController.LoseLife();
+
             if (gameController.GetLives() <= 0)
             {
                 gameController.DisplayFailScreen();
@@ -25,12 +27,11 @@ public class Cauldron : MonoBehaviour
             }
             else
             {
-                gameController.LoseLife();
                 audioManager.PlaySoundEffect(audioManager.wrong);
             }
         }
 
-        //Always destroy item regardles
+        // Destroy item
         Destroy(other.gameObject);
     }
 }

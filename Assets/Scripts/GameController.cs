@@ -4,6 +4,7 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     public ItemSpawner itemSpawner;
+    public AudioManager audioManager;
     public GameObject failScreen;
     public RequiredIngredientDisplay reqIngDisplay;
     public LevelText levelText;
@@ -47,7 +48,7 @@ public class GameController : MonoBehaviour
         // Increase the speed of items being dropped
         speedMultiplier = speedMultiplier + speedIntervalInc >= maxSpeedMultiplier ? maxSpeedMultiplier : speedMultiplier + speedIntervalInc;
 
-        // play level up sound effect
+        audioManager.PlaySoundEffect(audioManager.levelUp);
     }
 
     public void IncreaseIngCaught()
