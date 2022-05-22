@@ -24,3 +24,5 @@ Audio hosting provided by freesound.org
 * DSISStudios - Short Fart_01
 * InspectorJ - Dramatic Organ, A.wav
 * MadamVicious - WitchLaugh
+
+**With special mention to Dogmeat for emotional support**
