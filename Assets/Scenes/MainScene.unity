@@ -609,7 +609,7 @@ GameObject:
   - component: {fileID: 697228617}
   - component: {fileID: 697228619}
   - component: {fileID: 697228618}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ReqIngContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -634,7 +634,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 439, y: -224}
+  m_AnchoredPosition: {x: 322.6, y: -163.9}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &697228618
@@ -1140,7 +1140,7 @@ GameObject:
   - component: {fileID: 1241714755}
   - component: {fileID: 1241714754}
   - component: {fileID: 1241714753}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: RequiredIngredient
   m_TagString: Untagged
   m_Icon: {fileID: 0}
