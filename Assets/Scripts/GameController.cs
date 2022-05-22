@@ -5,6 +5,7 @@ public class GameController : MonoBehaviour
 {
     public ItemSpawner itemSpawner;
     public GameObject failScreen;
+    public RequiredIngredientDisplay reqIngDisplay;
 
     [Header("Leveling")]
     public int level = 1;
@@ -57,8 +58,7 @@ public class GameController : MonoBehaviour
 
     public void DesignateRequiredItem() {
         requiredIng = Random.Range(0, itemSpawner.maxNumOfItemTypes);
-        //itemSpawner.itemPool[randomIndex]
-        //Instantiate(itemPool[randomIndex], new Vector2(8, itemPool[randomIndex].transform.position.y), Quaternion.identity, transform);
+        reqIngDisplay.DisplayReqIng();
     }
 
     public int GetRequiredIngID()
