@@ -7,6 +7,9 @@ public class GameController : MonoBehaviour
     public GameObject failScreen;
     public RequiredIngredientDisplay reqIngDisplay;
 
+    [Header("Debugging")]
+    public bool godMode = false;
+
     [Header("Leveling")]
     public int level = 1;
     public int ingRequiredToLevelUp = 5;
@@ -63,6 +66,9 @@ public class GameController : MonoBehaviour
 
     public void DisplayFailScreen()
     {
+        if (godMode)
+            return;
+
         //Called upon catching an incorrect item.
         PauseGame();
         failScreen.SetActive(true);

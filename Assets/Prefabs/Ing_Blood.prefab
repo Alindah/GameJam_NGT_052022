@@ -51,6 +51,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ing_Blood
       objectReference: {fileID: 0}
+    - target: {fileID: 2506620457006013610, guid: 4c455a0404aa025478750599c39371bb, type: 3}
+      propertyPath: id
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506620457006013610, guid: 4c455a0404aa025478750599c39371bb, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2506620457006013611, guid: 4c455a0404aa025478750599c39371bb, type: 3}
       propertyPath: m_RootOrder
       value: 0
