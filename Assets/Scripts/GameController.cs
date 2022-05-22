@@ -6,6 +6,8 @@ public class GameController : MonoBehaviour
     public ItemSpawner itemSpawner;
     public GameObject failScreen;
     public RequiredIngredientDisplay reqIngDisplay;
+    public LevelText levelText;
+    public static bool gameIsPaused = false;
 
     [Header("Debugging")]
     public bool godMode = false;
@@ -15,7 +17,6 @@ public class GameController : MonoBehaviour
     public int ingRequiredToLevelUp = 5;
     public float speedIntervalInc = 0.05f;
     public float maxSpeedMultiplier = 2.0f;
-    public static bool gameIsPaused = false;
 
     private int ingCaught = 0;
     private float speedMultiplier = 1.0f;
@@ -29,7 +30,11 @@ public class GameController : MonoBehaviour
     private void Update()
     {
         if (ingCaught >= ingRequiredToLevelUp)
+        {
             LevelUp();
+            levelText.UpdateLevelText(level);
+        }
+
     }
 
     private void LevelUp()
