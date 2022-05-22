@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1441050714071114146
+--- !u!1001 &4851469962036084555
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -9,55 +9,35 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8656831102278147905, guid: 4c455a0404aa025478750599c39371bb, type: 3}
       propertyPath: m_Size.x
-      value: 0.6642276
+      value: 1.5616518
       objectReference: {fileID: 0}
     - target: {fileID: -8656831102278147905, guid: 4c455a0404aa025478750599c39371bb, type: 3}
       propertyPath: m_Size.y
-      value: 0.99983996
+      value: 0.12013054
       objectReference: {fileID: 0}
     - target: {fileID: -8656831102278147905, guid: 4c455a0404aa025478750599c39371bb, type: 3}
       propertyPath: m_Offset.x
-      value: 0.043526113
+      value: -0.0690555
       objectReference: {fileID: 0}
     - target: {fileID: -8656831102278147905, guid: 4c455a0404aa025478750599c39371bb, type: 3}
       propertyPath: m_Offset.y
-      value: -0.44777623
-      objectReference: {fileID: 0}
-    - target: {fileID: -8656831102278147905, guid: 4c455a0404aa025478750599c39371bb, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 0.84
-      objectReference: {fileID: 0}
-    - target: {fileID: -8656831102278147905, guid: 4c455a0404aa025478750599c39371bb, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 1.91
+      value: -0.430727
       objectReference: {fileID: 0}
     - target: {fileID: -8656831102278147905, guid: 4c455a0404aa025478750599c39371bb, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.84
+      value: 1.82
       objectReference: {fileID: 0}
     - target: {fileID: -8656831102278147905, guid: 4c455a0404aa025478750599c39371bb, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 2506620457006013608, guid: 4c455a0404aa025478750599c39371bb, type: 3}
-      propertyPath: m_Size.x
-      value: 0.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 2506620457006013608, guid: 4c455a0404aa025478750599c39371bb, type: 3}
-      propertyPath: m_Size.y
-      value: 1.91
+      value: 1.18
       objectReference: {fileID: 0}
     - target: {fileID: 2506620457006013608, guid: 4c455a0404aa025478750599c39371bb, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c4c2367a391794640abf2f7814b34880, type: 3}
+      objectReference: {fileID: 21300000, guid: 1335ef61b3d179f489b9a0ff773a0a92, type: 3}
     - target: {fileID: 2506620457006013609, guid: 4c455a0404aa025478750599c39371bb, type: 3}
       propertyPath: m_Name
-      value: Ing_Tentacle
-      objectReference: {fileID: 0}
-    - target: {fileID: 2506620457006013610, guid: 4c455a0404aa025478750599c39371bb, type: 3}
-      propertyPath: id
-      value: 2
+      value: Ing_Snail
       objectReference: {fileID: 0}
     - target: {fileID: 2506620457006013611, guid: 4c455a0404aa025478750599c39371bb, type: 3}
       propertyPath: m_RootOrder
@@ -65,15 +45,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2506620457006013611, guid: 4c455a0404aa025478750599c39371bb, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.7
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2506620457006013611, guid: 4c455a0404aa025478750599c39371bb, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.7
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2506620457006013611, guid: 4c455a0404aa025478750599c39371bb, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2506620457006013611, guid: 4c455a0404aa025478750599c39371bb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -114,6 +94,10 @@ PrefabInstance:
     - target: {fileID: 2506620457006013611, guid: 4c455a0404aa025478750599c39371bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506620457006013611, guid: 4c455a0404aa025478750599c39371bb, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c455a0404aa025478750599c39371bb, type: 3}
