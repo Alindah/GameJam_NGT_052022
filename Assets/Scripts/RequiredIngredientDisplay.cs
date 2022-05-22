@@ -9,5 +9,6 @@ public class RequiredIngredientDisplay : MonoBehaviour
     public void DisplayReqIng()
     {
         GetComponent<Image>().sprite = itemSpawner.itemPool[gameController.GetRequiredIngID()].GetComponent<SpriteRenderer>().sprite;
+        GetComponent<Image>().preserveAspect = true;
     }
 }
