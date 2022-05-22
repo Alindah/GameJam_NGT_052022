@@ -1711,7 +1711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
-  maxDistanceFromCenter: 10
+  maxDistanceFromCenter: 8
 --- !u!1 &1787971875
 GameObject:
   m_ObjectHideFlags: 0
