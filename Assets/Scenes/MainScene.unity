@@ -1853,7 +1853,7 @@ MonoBehaviour:
   itemSpawner: {fileID: 188317423}
   failScreen: {fileID: 1419162139}
   reqIngDisplay: {fileID: 1241714753}
-  levelText: {fileID: 0}
+  levelText: {fileID: 1675706663}
   lives: 3
   godMode: 0
   level: 1
