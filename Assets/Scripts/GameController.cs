@@ -70,14 +70,7 @@ public class GameController : MonoBehaviour
     void PauseGame()
     {
         gameIsPaused = !gameIsPaused;
-        if (gameIsPaused)
-        {
-            Time.timeScale = 0f;
-        }
-        else
-        {
-            Time.timeScale = 1;
-        }
+        Time.timeScale = gameIsPaused ? 0f : 1f;
     }
 
     public void RestartGame() {
