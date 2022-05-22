@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
     public RequiredIngredientDisplay reqIngDisplay;
     public LevelText levelText;
     public static bool gameIsPaused = false;
+    public int lives = 3;
 
     [Header("Debugging")]
     public bool godMode = false;
@@ -87,5 +88,15 @@ public class GameController : MonoBehaviour
     public void RestartGame() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         PauseGame();
+    }
+
+    public void LoseLife()
+    {
+        lives--;
+    }
+
+    public int GetLives()
+    {
+        return lives;
     }
 }

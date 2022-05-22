@@ -14,8 +14,12 @@ public class Cauldron : MonoBehaviour
         }
         else
         {
-            //If the item is not required, enter failure state.
-            gameController.DisplayFailScreen();
+            // If player catches the wrong item x amount of times, display lose screen
+            // Otherwise lose a life
+            if (gameController.GetLives() <= 0)
+                gameController.DisplayFailScreen();
+            else
+                gameController.LoseLife();
         }
 
         //Always destroy item regardles
