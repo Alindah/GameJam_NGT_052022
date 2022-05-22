@@ -1,7 +1,7 @@
 # Witch's Brew
  
 ## Description
-Help Sophie the witch craft the most powerful potion you can by catching the ingredients in the correct order. But be careful! If you catch too many wrong ingredients the entire batch will be ruined! Find out what levelyou can reach in Witch's Brew!
+Help Sophie the witch craft the most powerful potion you can by catching the ingredients in the correct order. But be careful! If you catch too many wrong ingredients the entire batch will be ruined! Find out what level you can reach in Witch's Brew!
 
 ## Controls
 Mouse and Keyboard
