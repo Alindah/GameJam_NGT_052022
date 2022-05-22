@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour
     public int ingRequiredToLevelUp = 5;
     public float speedIntervalInc = 0.05f;
     public float maxSpeedMultiplier = 2.0f;
+    public static bool gameIsPaused = false;
 
     private int ingCaught = 0;
     private float speedMultiplier = 1.0f;
@@ -58,8 +59,27 @@ public class GameController : MonoBehaviour
         //Instantiate(itemPool[randomIndex], new Vector2(8, itemPool[randomIndex].transform.position.y), Quaternion.identity, transform);
     }
 
-    public int getRequiredIngID()
+    public int GetRequiredIngID()
     {
         return requiredIng;
+    }
+
+    public void FailScreen()
+    {
+        //Called upon catching an incorrect item.
+        Debug.Log("Wrong item: Failure\nPausing Game");
+        PauseGame();
+    }
+    void PauseGame()
+    {
+        gameIsPaused = !gameIsPaused;
+        if (gameIsPaused)
+        {
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
     }
 }
