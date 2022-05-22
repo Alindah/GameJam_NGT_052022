@@ -47,7 +47,7 @@ public class GameController : MonoBehaviour
         // Increase the speed of items being dropped
         speedMultiplier = speedMultiplier + speedIntervalInc >= maxSpeedMultiplier ? maxSpeedMultiplier : speedMultiplier + speedIntervalInc;
 
-        // Increase frequency of items appearing?
+        // play level up sound effect
     }
 
     public void IncreaseIngCaught()
