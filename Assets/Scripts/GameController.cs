@@ -1,3 +1,4 @@
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
@@ -83,5 +84,10 @@ public class GameController : MonoBehaviour
         {
             Time.timeScale = 1;
         }
+    }
+
+    public void RestartGame() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        PauseGame();
     }
 }
