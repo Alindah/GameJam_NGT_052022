@@ -156,11 +156,14 @@ MonoBehaviour:
   - {fileID: 5211668093830293054, guid: 732a96c69513c404186125c91448ffba, type: 3}
   - {fileID: 7208889824248559217, guid: 4b517f68b2126a946a1e3a22cf20d304, type: 3}
   - {fileID: 3546283419650112779, guid: b8c53f8b8e205ab488621bc2690e990f, type: 3}
+  - {fileID: 7751734569305486233, guid: 09625bee40a382f4fb20ee495643741c, type: 3}
   - {fileID: 7379040711060929877, guid: d52bb05325a97524db03206e79b02e14, type: 3}
   - {fileID: 7033123157010637794, guid: ed0edb71745694642827d1c53d56b8bf, type: 3}
   - {fileID: 4126233722509696101, guid: 5d638719dcb09ec4fa4adbf610a6ea91, type: 3}
   - {fileID: 3928193712163169355, guid: a4a056816dcd66646b031c469376eadb, type: 3}
   - {fileID: 6426842719335067183, guid: 2e36e36bf3c72414ba04fa3980a49d8d, type: 3}
+  - {fileID: 7075368348602429580, guid: 1a54a47eb6340124d8cb7c5f8c5b842e, type: 3}
+  - {fileID: 1235829693094787408, guid: f3cd7f793ebce9443a3d51d017682a21, type: 3}
   - {fileID: 8928443328297196949, guid: f49773c5962c7594595fbaf337073254, type: 3}
   xBoundary: 9.5
   delayTime: 1
@@ -501,7 +504,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &856342105
