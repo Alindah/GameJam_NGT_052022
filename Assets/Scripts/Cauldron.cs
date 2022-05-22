@@ -17,7 +17,7 @@ public class Cauldron : MonoBehaviour
         else
         {
             //If the item is not required, enter failure state.
-            gameController.FailScreen();
+            gameController.DisplayFailScreen();
         }
         //Always destroy item regardles
         Destroy(other.gameObject);
