@@ -296,10 +296,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemPool:
-  - {fileID: 7751734569305486233, guid: 09625bee40a382f4fb20ee495643741c, type: 3}
   - {fileID: 5211668093830293054, guid: 732a96c69513c404186125c91448ffba, type: 3}
   - {fileID: 7208889824248559217, guid: 4b517f68b2126a946a1e3a22cf20d304, type: 3}
   - {fileID: 3546283419650112779, guid: b8c53f8b8e205ab488621bc2690e990f, type: 3}
+  - {fileID: 7751734569305486233, guid: 09625bee40a382f4fb20ee495643741c, type: 3}
   - {fileID: 7379040711060929877, guid: d52bb05325a97524db03206e79b02e14, type: 3}
   - {fileID: 7033123157010637794, guid: ed0edb71745694642827d1c53d56b8bf, type: 3}
   - {fileID: 4126233722509696101, guid: 5d638719dcb09ec4fa4adbf610a6ea91, type: 3}
@@ -1705,8 +1705,8 @@ MonoBehaviour:
   failScreen: {fileID: 1419162139}
   reqIngDisplay: {fileID: 1241714753}
   level: 1
-  ingRequiredToLevelUp: 5
-  speedIntervalInc: 0.05
+  ingRequiredToLevelUp: 3
+  speedIntervalInc: 0.1
   maxSpeedMultiplier: 2
 --- !u!1 &2088544494
 GameObject:
