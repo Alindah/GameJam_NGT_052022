@@ -21,7 +21,6 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         DesignateRequiredItem();
-        Debug.Log(requiredIng + " is the required item");
     }
 
     private void Update()
@@ -40,15 +39,11 @@ public class GameController : MonoBehaviour
         speedMultiplier = speedMultiplier + speedIntervalInc >= maxSpeedMultiplier ? maxSpeedMultiplier : speedMultiplier + speedIntervalInc;
 
         // Increase frequency of items appearing?
-
-        Debug.Log("we are at level " + level);
-        Debug.Log("item speed multiplier: " + speedMultiplier);
     }
 
     public void IncreaseIngCaught()
     {
         ingCaught++;
-        Debug.Log("caught " + ingCaught + " ingredients");
     }
 
     public float GetSpeedMultiplier()
@@ -69,7 +64,6 @@ public class GameController : MonoBehaviour
     public void DisplayFailScreen()
     {
         //Called upon catching an incorrect item.
-        Debug.Log("Wrong item: Failure\nPausing Game");
         PauseGame();
         failScreen.SetActive(true);
     }
